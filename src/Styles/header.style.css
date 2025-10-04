@@ -1,0 +1,53 @@
+.header-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background: rgba(255, 255, 255, 0.5); */
+    opacity: 1;
+    position: fixed;
+    top:30px;
+    z-index: 10;
+    left:0;
+
+}
+.header-box{
+    border: 0.5px solid rgb(226, 223, 223);
+    border-radius: 32px;
+    width: fit-content;
+    backdrop-filter: blur(5px);
+    width:45%;
+    background: rgba(255, 255, 255, 0.5);
+
+}
+.header-content{
+    padding:12px;
+    display: flex;
+    justify-content: space-between;
+}
+.profile-container{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-bar{
+    display: flex;
+    gap:15px;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.contact-buttton{
+    border: 0.5px solid rgb(226, 223, 223);
+    border-radius: 24px;
+}
+.contact{
+    padding: 2px 12px;
+    border-radius: 24px;
+    background-color: whitesmoke;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.075) 0px 0.597144px 0.597144px -0.9375px, rgba(0, 0, 0, 0.07) 0px 1.81088px 1.81088px -1.875px, rgba(0, 0, 0, 0.06) 0px 4.78699px 4.78699px -2.8125px, rgba(0, 0, 0, 0.024) 0px 15px 15px -3.75px;
+}

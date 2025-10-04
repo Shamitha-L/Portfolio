@@ -1,0 +1,42 @@
+.stack-wrapper {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  margin: 60px auto;
+  perspective: 1000px;
+
+    transform: rotateX(5deg) rotateY(20deg);
+  transform-style: preserve-3d;
+}
+
+/* Common styles for all images */
+.stack-img {
+  position: absolute;
+  top: 20px;
+  left: 125px;
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease;
+}
+
+/* Add rotations and offsets */
+.img-0 {
+  transform: rotate(-8deg) translate(-20px, -10px);
+  z-index: 1;
+}
+.img-1 {
+  transform: rotate(0deg) translate(0px, 0px);
+  z-index: 3; /* top image */
+}
+.img-2 {
+  transform: rotate(8deg) translate(20px, -10px);
+  z-index: 2;
+}
+.img-3 {
+  transform: rotate(4deg) translate(10px, 20px);
+  z-index: 0;
+}
+
