@@ -35,3 +35,41 @@
   align-items: center;
   gap:50px;
 }
+
+.second-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid gray;
+}
+
+.third-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid gray;
+  margin-top: 100px;
+}
+.fourth-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid gray;
+  margin-top: 100px;
+}
+
+.fifth-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid gray;
+  margin-top: 100px;
+}
+
+.sixth-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid gray;
+  margin-top: 100px;
+}

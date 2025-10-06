@@ -1,0 +1,134 @@
+.qa-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 50px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+
+.qa-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 80px 50px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.qa-left {
+  flex: 1;
+}
+
+.qa-left h2 {
+  font-size: 36px;
+  margin-bottom: 32px;
+}
+
+.qa-left .black {
+  color: #000;
+  font-weight: 700;
+}
+
+.qa-left .gray {
+  color: #666;
+  font-weight: 500;
+}
+
+/* Accordion Styles */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #fff;
+
+}
+
+.accordion-item.expanded {
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.question span:first-child {
+  color: #888;
+  margin-right: 12px;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 18px;
+  color: #888;
+}
+
+.answer {
+  margin-top: 12px;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Right Side Email Card */
+.qa-right {
+  width: 320px;
+}
+
+.email-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: left;
+  box-shadow: 0 0 0 1px #eee;
+}
+
+.email-heading {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.email-subtext {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.email-description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.email-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #333;
+}
