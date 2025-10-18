@@ -1,4 +1,5 @@
 import "./../Styles/firstsection.style.css";
+import profile from "./../assets/profile-vicky.jpeg";
 
 const Firstsection = () => {
   return (
@@ -29,7 +30,7 @@ const Firstsection = () => {
       {/* Button */}
       <button className="cta-button">
         <img
-          src="https://i.pravatar.cc/40"  /* Dummy profile pic */
+          src={profile}  
           alt="avatar"
           className="cta-avatar"
         />

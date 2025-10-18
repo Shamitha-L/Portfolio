@@ -1,5 +1,5 @@
 import "./../Styles/footer.style.css";
-import { FaYoutube, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -16,14 +16,27 @@ const Footer = () => {
           <div className="footer-contact-social">
             <div className="footer-contact">
               <p>Email</p>
-              <a href="mailto:team@gakuyen.com">team@gakuyen.com</a>
+              <a href="mailto:Vigneshbalakumar11@gmail.com">
+                Vigneshbalakumar11@gmail.com
+              </a>
             </div>
             <div className="footer-social">
               <p>Social</p>
               <div className="social-icons">
-                <a href="/youtube"><FaYoutube /></a>
-                <a href="/instagram"><FaInstagram /></a>
-                <a href="/tiktok"><FaTiktok /></a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://youtube.com/@the.adv_kid?si=aLO-yJKWNGMrMeMo"
+                >
+                  <FaYoutube />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/the.adv_kid?igsh=aWg3dnZxb2ZhYzkw&utm_source=qr"
+                >
+                  <FaInstagram />
+                </a>
               </div>
             </div>
           </div>

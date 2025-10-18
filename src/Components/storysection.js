@@ -1,5 +1,6 @@
 import "./../Styles/storysection.style.css";
 import profile from "./../assets/image1.jpeg";
+import { FaYoutube, FaInstagram } from "react-icons/fa";
 
 const StorySection = () => {
   return (
@@ -13,19 +14,27 @@ const StorySection = () => {
         <div className="divider">
           <div className="story-section-image">
             <div className="image-container">
-              <img
-                src={profile}
-                alt="Vicky"
-              />
+              <img src={profile} alt="Vicky" />
 
               <div className="image-icons">
-                <span>🔍</span>
-                <span>❤️</span>
-                <span>🔗</span>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://youtube.com/@the.adv_kid?si=aLO-yJKWNGMrMeMo"
+                >
+                  <FaYoutube />
+                </a>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/the.adv_kid?igsh=aWg3dnZxb2ZhYzkw&utm_source=qr"
+                >
+                  <FaInstagram />
+                </a>
               </div>
             </div>
             <div className="profile-info">
-              <strong>gaku lange</strong>
+              <strong>Vicky</strong>
               <p>photographer, filmmaker, creative</p>
             </div>
           </div>
