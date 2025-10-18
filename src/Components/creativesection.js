@@ -8,7 +8,7 @@ const CreativeSection = () => {
           Curated Insights & <br />
           <span style={{color:'#000'}}>creative resources.</span>
         </h2>
-        <a href="#" className="view-all-link">
+        <a href="/products" className="view-all-link">
           View All
         </a>
       </div>

@@ -59,7 +59,7 @@ const ImageSection = () => {
           ))}
         </div>
         <div className="view-more">
-          <a href="#">View All My Projects</a>
+          <a href="/products">View All My Projects</a>
         </div>
       </div>
     </div>

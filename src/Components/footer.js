@@ -21,9 +21,9 @@ const Footer = () => {
             <div className="footer-social">
               <p>Social</p>
               <div className="social-icons">
-                <a href="#"><FaYoutube /></a>
-                <a href="#"><FaInstagram /></a>
-                <a href="#"><FaTiktok /></a>
+                <a href="/youtube"><FaYoutube /></a>
+                <a href="/instagram"><FaInstagram /></a>
+                <a href="/tiktok"><FaTiktok /></a>
               </div>
             </div>
           </div>
@@ -34,8 +34,8 @@ const Footer = () => {
           <div className="footer-bottom">
             <p>Based in Tokyo, Japan</p>
             <div className="footer-links">
-              <a href="#">Terms of service</a>
-              <a href="#">Privacy Policy</a>
+              <a href="/terms-and-services">Terms of service</a>
+              <a href="/privacy-policy">Privacy Policy</a>
             </div>
           </div>
 
