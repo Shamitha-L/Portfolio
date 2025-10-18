@@ -137,3 +137,12 @@
   font-size: 14px;
   color: #a5a5a5;
 }
+
+@media (max-width: 500px) {
+ .footer-contact-social{
+    flex-direction: column;
+   }
+   .footer-bottom {
+    flex-direction: column;
+   }
+}

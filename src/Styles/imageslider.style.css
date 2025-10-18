@@ -40,3 +40,20 @@
   z-index: 0;
 }
 
+@media (min-width: 1024px) and (max-width: 1143px) {
+  .stack-img {
+    left: 40px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1023px) {
+  .stack-img {
+    left: 0px;
+    width: 350px;
+  height: 250px;
+  }
+}
+@media (max-width: 899px) {
+  .stack-wrapper {
+    display: none;
+  }
+}

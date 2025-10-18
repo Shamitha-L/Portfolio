@@ -6,7 +6,7 @@ const Firstsection = () => {
       {/* Status Badge */}
       <div className="status-badge">
         <span className="status-dot"></span>
-        Available for Inquiries
+        Let us Connect
       </div>
 
       {/* Title */}
@@ -20,8 +20,7 @@ const Firstsection = () => {
 
       {/* Description */}
       <p className="first-description">
-        hello, I’m <span className="highlight">Gaku</span> – a mixed-media
-        specialist based out of <span className="highlight">Tokyo, Japan.</span>
+        hello, I’m <span className="highlight">Vicky</span> – Aspiring Visual Storyteller <span className="highlight">Coimbatore, </span>
       </p>
       <p className="first-description">
         I execute photo, video, and design projects.

@@ -98,3 +98,26 @@ cursor: pointer;
         text-decoration: underline;
     }
 }
+
+@media (max-width: 899px) {
+  .image-section-wrapper{
+    gap:60px;
+    padding: 20px;
+  }
+  .image-title-content span{
+    width: 100%;
+    text-align: center;
+}
+}
+
+@media (max-width: 500px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+  .subtitle{
+    font-size: 30px;
+  }
+  .subtitle span{
+    font-size: 30px;
+  }
+}

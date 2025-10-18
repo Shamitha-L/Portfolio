@@ -104,9 +104,37 @@
   .service-section-wrapper {
     flex-direction: column;
     align-items: flex-start;
+    padding: 20px 20px;
   }
 
   .service-right {
     margin-top: 40px;
   }
+}
+@media (max-width: 500px) {
+  .service-left h2 {
+  font-size: 30px;
+  font-weight: 400;
+  color: gray;
+  line-height: 1.2;
+}
+.service-right li::before {
+  width: 15px;  /* bigger circle */
+  height: 15px;
+}
+
+.service-left h2 span {
+  color: black;
+  font-weight: 700;
+}
+.service-right li {
+  font-size: 15px;
+}
+.tool-icon{
+  width: 35px;
+  height: 35px;
+}
+.service-section-wrapper{
+  gap:20px;
+}
 }

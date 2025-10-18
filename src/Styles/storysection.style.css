@@ -99,3 +99,21 @@
   color: #555;
   margin-bottom: 16px;
 }
+@media (max-width: 899px) {
+  .divider {
+    flex-direction: column;
+    gap:20px;
+  }
+  .story-section-wrapper{
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+ .header-title{
+  font-size: 30px;
+ }
+ .story-section-image{
+  width:250px;
+ }
+}
