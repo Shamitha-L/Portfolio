@@ -33,7 +33,8 @@ const Firstsection = () => {
           src={profile}  
           alt="avatar"
           className="cta-avatar"
-        />
+        /> <div className="cta-button-plus">+</div>
+        <div className="cta-button-animation">You</div>
         Send me a message
       </button>
     </div>

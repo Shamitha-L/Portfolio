@@ -3,39 +3,35 @@ import "./../Styles/qasection.style.css";
 
 const qaData = [
   {
-    question: "What types of projects do you specialize in?",
+    question:
+      "What is your creative process for developing a multimedia story?",
     answer:
-      "I focus primarily on creative direction, cinematic video production, photography, and short-form content. My work ranges from high-end brand campaigns to editorial photography and social reels.",
+      "I start by understanding your goals, audience, and message through a discovery conversation. From there, I develop a concept that blends visual elements—photography, video, and design—into a cohesive narrative. I create mood boards or storyboards for approval, then move into production (shooting and filming), followed by editing and refining based on your feedback. The goal is to craft a story that resonates emotionally while achieving your objectives.",
   },
   {
-    question: "How involved are you in the creative process?",
+    question: "How long does a typical project take from start to finish?",
     answer:
-      "I'm deeply involved from concept to execution. I collaborate closely with clients to ensure the creative direction aligns with their vision.",
+      "Timeline depends on project scope, but most projects follow this general structure: 1-2 weeks for concept development and planning, 1-3 days for shooting/filming (depending on complexity), and 1-2 weeks for editing and revisions. Simple social media content might take 1-2 weeks total, while comprehensive brand storytelling campaigns could take 4-6 weeks. I'll provide a detailed timeline during our initial consultation based on your specific needs.",
   },
   {
-    question: "Do you take on smaller projects, or only large campaigns?",
+    question: "How many revisions are included, and what if I want changes?",
     answer:
-      "I take on both! From small editorial shoots to full-scale brand campaigns, I adapt to your needs and goals.",
+      "Each project includes two rounds of revisions to ensure you're completely satisfied with the final product. The first revision addresses major structural or creative direction feedback, while the second handles fine-tuning and polish. Additional revisions beyond this can be accommodated for a small fee. I believe in collaborative storytelling, so your input throughout the process helps us get it right without needing excessive revisions.",
   },
   {
-    question: "How long does a typical project take?",
+    question: "What do you charge, and what's included in your pricing?",
     answer:
-      "It depends on the scope, but most projects take between 1–4 weeks. Larger campaigns may take longer.",
+      "Pricing varies based on project complexity, deliverables, and usage rights. A typical social media content package starts around ₹15,000-25,000, while comprehensive brand storytelling projects begin at ₹40,000+. This includes pre-production planning, shooting/filming, editing, music licensing, two revision rounds, and final file delivery in your preferred formats. Travel within the city is included; outstation projects are quoted separately. I'm happy to create a custom package that fits your budget and goals.",
   },
   {
-    question: "Do you handle everything yourself, or do you have a team?",
+    question: "What tools and software do you use?",
     answer:
-      "I handle core creative work myself, but also collaborate with a trusted team when projects require additional skills or scale.",
+      "For video editing, I work with Adobe Premiere Pro, DaVinci Resolve, and After Effects for motion graphics. Photography editing is done in Adobe Lightroom and Photoshop. For web and design work, I use modern website builders, React.js, and design tools like Figma. This toolkit allows me to deliver professional-quality content across all platforms while maintaining creative flexibility and technical excellence.",
   },
   {
-    question: "Can you match my existing brand aesthetic?",
+    question: "Can you adapt your style for different platforms and audiences?",
     answer:
-      "Yes. I always begin by studying your brand and style, ensuring my work feels like a natural extension of your existing identity.",
-  },
-  {
-    question: "How do you structure pricing and payments?",
-    answer:
-      "Pricing is project-based and transparent. I provide detailed quotes up front and flexible payment options.",
+      "Absolutely. Each platform has unique requirements—Instagram and TikTok favor vertical, fast-paced storytelling with strong hooks in the first 3 seconds, while YouTube allows for longer-form narrative development. I tailor aspect ratios, pacing, captions, and visual style to match where your content will live and who will see it. During our initial consultation, we'll discuss your target audience and platform strategy to ensure the content performs well and connects authentically.",
   },
 ];
 
@@ -64,10 +60,20 @@ const QASection = () => {
               onClick={() => toggleIndex(index)}
             >
               <div className="question">
-                <div style={{display: 'flex', alignItems: 'center', justifyContent:'space-between', width: '100%'}}>
-                    <div>
-                <span>{`0${index + 1}`}</span> {item.question} </div>
-                <span className="icon">{activeIndex === index ? "–" : "+"}</span>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    width: "100%",
+                  }}
+                >
+                  <div>
+                    <span>{`0${index + 1}`}</span> {item.question}{" "}
+                  </div>
+                  <span className="icon">
+                    {activeIndex === index ? "–" : "+"}
+                  </span>
                 </div>
               </div>
               {activeIndex === index && (
@@ -80,10 +86,15 @@ const QASection = () => {
 
       <div className="qa-right">
         <div className="email-card">
-          <p className="email-heading">Have a follow-up<br />question?</p>
+          <p className="email-heading">
+            Have a follow-up
+            <br />
+            question?
+          </p>
           <p className="email-subtext">Send me an email!</p>
           <p className="email-description">
-            Learn more about how I work and how I can help you and your business bring a creative idea to life.
+            Learn more about how I work and how I can help you and your business
+            bring a creative idea to life.
           </p>
           <button className="email-button">Email Me</button>
         </div>

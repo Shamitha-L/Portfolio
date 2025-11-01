@@ -16,8 +16,8 @@ const Footer = () => {
           <div className="footer-contact-social">
             <div className="footer-contact">
               <p>Email</p>
-              <a href="mailto:Vigneshbalakumar11@gmail.com">
-                Vigneshbalakumar11@gmail.com
+              <a href="mailto:vigneshbalakumar11@gmail.com">
+                vigneshbalakumar11@gmail.com
               </a>
             </div>
             <div className="footer-social">
