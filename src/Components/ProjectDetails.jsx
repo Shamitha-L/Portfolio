@@ -2,14 +2,13 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./../Styles/projectdetails.style.css";
 
-
 const ProjectDetails = () => {
   const { id } = useParams(); // get project id from URL
   const [project, setProject] = useState(null);
 
   useEffect(() => {
     fetchProject();
-  }, []);
+  });
 
   const fetchProject = async () => {
     try {
