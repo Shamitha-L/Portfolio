@@ -6,9 +6,10 @@ const ProjectDetails = () => {
   const { id } = useParams(); // get project id from URL
   const [project, setProject] = useState(null);
 
-  useEffect(() => {
-    fetchProject();
-  });
+ useEffect(() => {
+  fetchProject();
+  // eslint-disable-next-line
+}, []);
 
   const fetchProject = async () => {
     try {
@@ -35,7 +36,7 @@ const ProjectDetails = () => {
   return (
     <div className="project-details-page">
       <h1>{project.title}</h1>
-      <p>{project.description}</p>
+      <p>{project.paragraphs}</p>
 
       {/* Images */}
       <h2>Images</h2>
