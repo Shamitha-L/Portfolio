@@ -35,11 +35,11 @@ const ProjectDetails = () => {
 
   return (
     <div className="project-details-page">
-      <h1>{project.title}</h1>
+      <h3>{project.title}</h3>
       <p>{project.paragraphs}</p>
 
       {/* Images */}
-      <h2>Images</h2>
+      <h5>Images</h5>
       <div className="image-gallery">
         {project.images?.map((img, index) => (
           <img key={index} src={img} alt="project" className="detail-image" />
@@ -49,7 +49,7 @@ const ProjectDetails = () => {
       {/* Videos */}
       {project.videos?.length > 0 && (
         <>
-          <h2>Videos</h2>
+          <h5>Videos</h5>
           <div className="video-gallery">
             {project.videos.map((video, index) => (
               <video
