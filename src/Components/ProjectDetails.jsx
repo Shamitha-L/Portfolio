@@ -22,7 +22,7 @@ const ProjectDetails = () => {
 
       setProject({
         title: data.post.titles?.[0],
-        description: data.post.descriptions?.[0],
+        paragraphs: data.post.paragraphs?.[0],
         images: data.post.images?.map((img) => `${baseURL}${img}`),
         videos: data.post.videos?.map((vid) => `${baseURL}${vid}`),
       });
