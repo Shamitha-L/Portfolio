@@ -1,37 +1,44 @@
+import { useEffect, useState } from "react";
 import "./../Styles/imagesection.style.css";
 
-const projects = [
-  {
-    id: 1,
-    title: "airasia / american tourister",
-    image:
-      "https://images.unsplash.com/photo-1522199710521-72d69614c702?auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "aape",
-    image:
-      "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "salomon / brand campaign",
-    image:
-      "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "ferrari",
-    image:
-      "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-    link: "#",
-  },
-];
-
 const ImageSection = () => {
+  const [projects, setProjects] = useState([]);
+  const [showAll, setShowAll] = useState(false);
+
+  useEffect(() => {
+    fetchProjects();
+  }, []);
+
+  const fetchProjects = async () => {
+    try {
+      const res = await fetch(
+        "https://portfolio-backend-1-l0e4.onrender.com/api/posts"
+      );
+      const data = await res.json();
+
+      console.log("Fetched posts:", data);
+      const baseURL = "https://portfolio-backend-1-l0e4.onrender.com";
+
+      // Convert backend posts to card format
+      const formatted = data.posts.map((post, index) => ({
+        id: post._id || index,
+        title: post.titles?.[0] || "Untitled Project",
+        image: post.images?.[0]
+          ? `${baseURL}${post.images[0]}`
+          : "https://via.placeholder.com/400x300?text=No+Image",
+
+        link: `/project/${post._id}`,
+      }));
+
+      setProjects(formatted);
+    } catch (err) {
+      console.error("Error fetching posts:", err);
+    }
+  };
+
+  // Show only 4 initially unless "View More" is clicked
+  const displayedProjects = showAll ? projects : projects.slice(0, 4);
+
   return (
     <div className="image-section-wrapper">
       <div className="image-title-content">
@@ -45,8 +52,9 @@ const ImageSection = () => {
         <div className="subtitle">
           Some of my <span>Works</span>
         </div>
+
         <div className="projects-grid">
-          {projects.map((project) => (
+          {displayedProjects.map((project) => (
             <div className="project-card" key={project.id}>
               <img src={project.image} alt={project.title} />
               <div className="project-overlay">
@@ -58,8 +66,13 @@ const ImageSection = () => {
             </div>
           ))}
         </div>
+
         <div className="view-more">
-          <a href="/products">View All My Projects</a>
+          {!showAll ? (
+            <button onClick={() => setShowAll(true)}>View More</button>
+          ) : (
+            <button onClick={() => setShowAll(false)}>Show Less</button>
+          )}
         </div>
       </div>
     </div>
